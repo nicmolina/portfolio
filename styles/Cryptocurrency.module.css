@@ -1,0 +1,75 @@
+.crypto_container{
+    display: flex;
+    border-radius: 15px;
+    flex-direction: column;
+    background-color: #44475a;
+    padding: 1%;
+    margin-top: 5%;
+    width: 50%;
+}
+
+.crypto_container:hover{
+    transform: scale(1.03);
+    transition: all 0.3s ease 0s;
+}
+
+.title{
+    font-family: FiraCode-Bold;
+}
+
+.crypto_text_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.crypto_text_container h2{
+    color: #50fa7b;
+    font-family: FiraCode-Bold;
+}
+
+.crypto_container p{
+    color: #8be9fd;
+    font-family: FiraCode-Regular;
+}
+
+.crypto_container a{
+    color: #ff79c6;
+    cursor: pointer;
+    transition: all 0.25s linear;
+    font-family: FiraCode-Light;
+    border-bottom: 3px solid #ff8cbc;
+    transition: all 0.25s linear;
+    position: relative;
+    width: fit-content;
+}
+
+.crypto_container span{
+    color: #bd93f9;
+    font-family: FiraCode-Light;
+}
+
+  
+.crypto_container  a:before {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #ffb86c;
+    position: absolute;
+    left: 0;
+    bottom: -3px; /* this is to match where the border is */
+    transform-origin: left; 
+    transform: scale(0);
+    transition: 0.25s linear;
+  /*   will-change: transform; */
+}
+
+  
+  .crypto_container a:hover:before {
+    transform: scale(1);
+  }
+
+  .crypto_container a:hover{
+      color: #ffb86c;
+  }
